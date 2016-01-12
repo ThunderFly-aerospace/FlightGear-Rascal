@@ -13,7 +13,8 @@ dynamics model, and external 3D model.
   <description>Rascal 110 (R/C)</description>
   <author>Lee Elliot (3D) Dave Culp (JSBsim dynamics) and Curt Olson</author>
   <aircraft-version>0.1</aircraft-version>
-
+  <variant-of>Rascal10-JSBsim</variant-of>
+  
   <startup>
     <splash-texture>Aircraft/Rascal/Rascal110-splash.rgb</splash-texture>
   </startup>
@@ -21,7 +22,7 @@ dynamics model, and external 3D model.
   <flight-model>jsb</flight-model>
   <aero>Rascal110-JSBSim</aero>
   <fuel-fraction>0.8</fuel-fraction>
-  
+
   <systems>
    <autopilot>
     <path>Aircraft/Rascal/Systems/110-autopilot.xml</path>
@@ -29,7 +30,7 @@ dynamics model, and external 3D model.
    <electrical>
     <path>Aircraft/Rascal/Systems/electrical.xml</path>
    </electrical>
-  </systems> 
+  </systems>
 
   <sound>
    <path>Aircraft/Generic/generic-sound.xml</path>
@@ -42,7 +43,7 @@ dynamics model, and external 3D model.
   <model>
    <path archive="y">Aircraft/Rascal/Models/Rascal110.xml</path>
   </model>
-  
+
   <hud>
    <path n="1">Huds/NTPS.xml</path>
    <visibility n="1">true</visibility>
@@ -188,7 +189,7 @@ dynamics model, and external 3D model.
  <input>
    <keyboard include="Rascal-keyboard.xml"/>
  </input>
-         
+
  <controls>
   <flight>
    <aileron-trim>-0.01</aileron-trim>   <!-- fixed -->
@@ -209,5 +210,5 @@ dynamics model, and external 3D model.
    <rpm type="double">700</rpm>
   </engine>
  </engines>
-  
+
 </PropertyList>
