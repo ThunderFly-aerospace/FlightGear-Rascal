@@ -10,7 +10,7 @@ var main_loop = func {
     last_time = time;
 
     update_airdata( dt );
-    update_ugear( dt );
+    update_aura( dt );
 
     settimer(main_loop, 0);
 }

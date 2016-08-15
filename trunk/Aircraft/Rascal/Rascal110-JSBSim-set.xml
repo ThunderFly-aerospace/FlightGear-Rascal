@@ -176,7 +176,7 @@ dynamics model, and external 3D model.
   <rascal>
    <file>Aircraft/Rascal/Systems/main.nas</file>
    <file>Aircraft/Rascal/Systems/airdata.nas</file>
-   <file>Aircraft/Rascal/Systems/ugear.nas</file>
+   <file>Aircraft/Rascal/Systems/aura.nas</file>
   </rascal>
  </nasal>
 
@@ -211,4 +211,9 @@ dynamics model, and external 3D model.
   </engine>
  </engines>
 
+ <aura-uas>
+   <settings>
+     <ap-enable type="bool">false</ap-enable>
+   </settings>
+ </aura-uas>
 </PropertyList>
