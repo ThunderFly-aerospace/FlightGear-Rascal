@@ -1,7 +1,7 @@
 var last_time = 0.0;
 var last_speed = 0.0;
 var speed_sensed = 0.0;
-var sensor_step = 1.0;
+var sensor_step = 0.0;
 var speed_filt = 0.0;
 var accel_filt = 0.0;
 
@@ -26,6 +26,7 @@ var update_airdata = func( dt ) {
     } elsif ( r > 0.6666 ) {
 	sensed_speed = sensed_speed + sensor_step;
     }
+    setprop("/velocities/airspeed-noisy-kt", sensed_speed);
 
     speed_filt = 0.97 * speed_filt + 0.03 * sensed_speed;
 
