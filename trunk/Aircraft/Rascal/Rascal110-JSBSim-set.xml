@@ -45,8 +45,11 @@ dynamics model, and external 3D model.
   </model>
 
   <hud>
-   <path n="1">Huds/NTPS.xml</path>
    <visibility n="1">true</visibility>
+   <enable3d n="1">false</enable3d>
+   <path n="2">Huds/NTPS.xml</path>
+   <visibility n="2">true</visibility>
+   <enable3d n="2">true</enable3d>
    <color>
     <transparent type="bool">true</transparent>
     <antialiased type="bool">true</antialiased>
