@@ -14,7 +14,7 @@ The reference datum for measurements is the tip of the nose.
 -->
 
 <!-- 12 lb aircraft weight includes engine, but not fuel (empty weight) -->
-<airplane mass="12">
+<airplane version="2018.1" mass-kg="5.4" mtow-kg="25">
 
 <!-- Approach configuration -->
 <approach speed="15" aoa="4">
@@ -50,10 +50,8 @@ The reference datum for measurements is the tip of the nose.
   <flap0 start=".40" end="0.95" lift="1.1" drag="1.2"/>
   <control-input axis="/controls/flight/aileron" control="FLAP0" split="true"/>
   <control-input axis="/controls/flight/aileron-trim" control="FLAP0" split="true"/>
-  <control-output control="FLAP0" side="left"
-		  prop="/surface-positions/left-aileron-pos-norm"/>
-  <control-output control="FLAP0" side="right"
-		  prop="/surface-positions/right-aileron-pos-norm"/>
+  <control-output control="FLAP0" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
+  <control-output control="FLAP0" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
 </wing>
 
 <hstab x="-1.80" y="0.03" z="0.00" taper="0.6" effectiveness="1.0"
@@ -80,11 +78,10 @@ The reference datum for measurements is the tip of the nose.
 <propeller radius="0.23"
            x="-0.10" y="0.00" z="0.00"
            mass="3.5" moment="0.001"
-	   cruise-speed="60" cruise-rpm="7500"
-           cruise-alt="2000" cruise-power="0.6"
-           takeoff-power="0.6" takeoff-rpm="7000">
-  <piston-engine eng-power="0.6" eng-rpm="7000"
-                 displacement="1.60"/>
+	         cruise-speed="60" cruise-rpm="7500"
+           cruise-alt="2000" cruise-power="1.3"
+           takeoff-power="2.1" takeoff-rpm="7000">
+  <piston-engine eng-power="2.4" eng-rpm="7000" displacement="1.60"/>
   <actionpt x="0.00" y="0.00" z="0.00"/>
   <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
@@ -109,7 +106,7 @@ The reference datum for measurements is the tip of the nose.
 </gear>
 
 <!-- There's just one 20 oz tank, right behind the engine (!!!) -->
-<tank x="-0.23" y="0.0" z="-0.08" capacity="1.00"/> 
+<tank x="-0.23" y="0.0" z="-0.08" capacity="1.00"/>
 
 <!--
   Note the tandem seating; the x values (arms) come from the
