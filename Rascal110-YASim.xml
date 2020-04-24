@@ -15,7 +15,7 @@ The reference datum for measurements is the tip of the nose.
 -->
 
 <!-- 12 lb aircraft weight includes engine, but not fuel (empty weight) -->
-<airplane version="2018.1" mass-kg="5.4" mtow-kg="25">
+<airplane version="YASIM_VERSION_CURRENT" mass-kg="5.4" mtow-kg="25">
 
 <!-- Approach configuration -->
 <approach speed="18" aoa="4">
@@ -92,12 +92,10 @@ The reference datum for measurements is the tip of the nose.
 	         cruise-speed="60" cruise-rpm="7500"
            cruise-alt="2000" cruise-power="1.3"
            takeoff-power="2.1" takeoff-rpm="7000">
-  <piston-engine eng-power="2.4" eng-rpm="7000" displacement="1.60"/>
   <actionpt x="0.00" y="0.00" z="0.00"/>
-  <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
-  <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
-  <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
-  <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
+  <electric-engine Kv="750" voltage="15" Rm="0.02" >
+    <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+  </electric-engine>
 </propeller>
 
 <gear x="-1.93" y="0.00" z="-0.13" compression="0.01">
