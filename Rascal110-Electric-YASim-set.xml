@@ -13,7 +13,7 @@ dynamics model, and external 3D model.
   <description>Rascal 110 (R/C)</description>
   <author>Lee Elliot (3D) Dave Culp (JSBsim dynamics) and Curt Olson</author>
   <aircraft-version>0.2</aircraft-version>
-  <primary-set type="bool">true</primary-set>
+  <variant-of>Rascal110-YASim</variant-of>
 
   <startup>
     <splash-texture>Aircraft/Rascal/Rascal110-splash.rgb</splash-texture>
