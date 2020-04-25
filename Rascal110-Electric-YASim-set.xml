@@ -20,7 +20,7 @@ dynamics model, and external 3D model.
   </startup>
 
   <flight-model>yasim</flight-model>
-  <aero>Rascal110-YASim</aero>
+  <aero>Rascal110-Electric-YASim</aero>
   <fuel-fraction>0.8</fuel-fraction>
 
   <systems>
