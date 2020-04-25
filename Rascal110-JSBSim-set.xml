@@ -12,9 +12,9 @@ dynamics model, and external 3D model.
 
   <description>Rascal 110 (R/C)</description>
   <author>Lee Elliot (3D) Dave Culp (JSBsim dynamics) and Curt Olson</author>
-  <aircraft-version>0.1</aircraft-version>
-  <variant-of>Rascal10-JSBsim</variant-of>
-  
+  <aircraft-version>0.2</aircraft-version>
+  <variant-of>Rascal110-YASim</variant-of>
+
   <startup>
     <splash-texture>Aircraft/Rascal/Rascal110-splash.rgb</splash-texture>
   </startup>
@@ -165,12 +165,12 @@ dynamics model, and external 3D model.
 
   <help>
     <title>Rascal 110 (Sig Mfg)</title>
-    <line>Cruise speed: 60 kts</line>
+    <line>Cruise speed: 30 kts</line>
     <line>Never-exceed (Vne): 85 kts</line>
     <line>Best Glide (Vglide): 20 kts</line>
     <line>Maneuvering (Va): 50 kts</line>
-    <line>Approach speed: 20-25 kts</line>
-    <line>Stall speed (Vs): 15 kts</line>
+    <line>Approach speed: 18 kts</line>
+    <line>Stall speed (Vs): 10 kts</line>
   </help>
 
  </sim>
@@ -183,11 +183,6 @@ dynamics model, and external 3D model.
   </rascal>
  </nasal>
 
- <yasim>
-  <Rascal110>
-   <pilot-lb>2</pilot-lb>
-  </Rascal110>
- </yasim>
 
  <input>
    <keyboard include="Rascal-keyboard.xml"/>
