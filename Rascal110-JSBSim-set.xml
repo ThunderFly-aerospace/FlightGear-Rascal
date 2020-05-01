@@ -70,6 +70,10 @@ dynamics model, and external 3D model.
    </palette>
   </hud>
 
+  <current-view>
+    <view-number type="int">2</view-number>
+  </current-view>
+
   <view>
    <internal archive="y">true</internal>
    <config>
