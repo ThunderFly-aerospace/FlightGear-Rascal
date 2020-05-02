@@ -10,9 +10,17 @@ dynamics model, and external 3D model.
 <PropertyList>
  <sim>
 
-  <description>Rascal 110 (R/C)</description>
+  <description>Rascal 110 JSBSim</description>
   <author>Lee Elliot (3D) Dave Culp (JSBsim dynamics) and Curt Olson</author>
+  <status>advanced production</status>
   <aircraft-version>0.2</aircraft-version>
+  <minimum-fg-version>2018.1.0</minimum-fg-version>
+  <rating>
+      <FDM type="int">3</FDM>
+      <systems type="int">5</systems>
+      <model type="int">5</model>
+      <cockpit type="int">2</cockpit>
+  </rating>
   <variant-of>Rascal110-YASim</variant-of>
 
   <startup>
