@@ -100,7 +100,7 @@
     </ground_reactions>
 
     <propulsion>
-        <engine file="electrical_engine_1050W.xml">
+        <engine file="Hacker-A60.xml">
             <location unit="IN">
                 <x> 36 </x>
                 <y> 0 </y>

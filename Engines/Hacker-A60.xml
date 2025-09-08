@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!--bldc_engine name=Hacker A60-5XS"-->
+  <brushless_dc_motor name="Hacker A60-5XS">
+  	<velocityconstant> 420 </velocityconstant>
+  	<coilresistance>0.012</coilresistance>
+  	<noloadcurrent>2.40</noloadcurrent>
+  	<maxvolts> 25.2</maxvolts>
+</brushless_dc_motor>
